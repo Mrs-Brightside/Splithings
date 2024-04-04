@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #F5F5F5;
+    font-family: Inter, sans-serif;
+    height: 97.8vh;
+}
+
+.card_1 {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    margin: 0.5vw;
+    height: 95.6vh;
+}
+
+.user_debt_card {
+    background-color: #4AE89C;
+    border-radius: 10px;
+    padding: 1.2vw;
+    height: min-content;
+}
+
+.user_debt, .user_display_name_settings {
+    display: flex;
+    flex-direction: row;
+}
+
+.user_display_name {
+    font-size: 1vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.user_display_name_settings {
+    justify-content: space-between;
+    padding-bottom: 1vw;
+    color:#2A4E56;
+    align-items: center;
+    margin-top: -1.1vw;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.first_user {
+    font-weight: 800;
+}
+
+.user_debt {
+    margin-top: -30%;
+    margin-bottom: -35%;
+    align-items: baseline;
+    padding-bottom: 1vw;
+}
+
+.user_debt_euros {
+    font-size: 5vw;
+    font-weight: 500;
+    color: #2A4E56;
+    font-family: Fjalla One, sans-serif;
+}
+
+.user_debt_cents {
+    font-size: 3.3vw;
+    font-weight: 500;
+    color: #2A4E56;
+    font-family: Fjalla One, sans-serif;
+}
+
+.expenses_date {
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.choose_expense_year, .choose_expense_month {
+    display: flex;
+    overflow-block: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    flex-direction: row;
+}
+
+.year, .month {
+    padding-right: 1.2vw;
+    font-family: Fjalla One, sans-serif;
+    font-size: 2vw;
+    color: rgb(42, 78, 86);
+}
+
+.empty_space {
+    padding: 0 150px;
+}
+
+.month {
+    font-size: 1.3vw;
+    margin-top: 0.5vw;
+}
+
+.user_overview {
+    display: flex;
+    flex-direction: column;
+}
+
+.users_total, .users_goal, .user_total_goal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.users_total, .users_goal {
+    background-color: white;
+    border-radius: 10px;
+    width: 49%;
+    height: 2.6vw;
+    font-family: Fjalla One, sans-serif;
+    font-size: 1.1vw;
+    color: #2A4E56;
+    align-items: center;
+}
+
+.mensal_goal_percentage {
+    margin-top: 0.5vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.js-mensal-goal-text {
+    padding: 0vw 0.8vw; 
+    color: #4AE89C;
+}
+
+.js-percentage-bar-value {
+    padding: 0vw 0.8vw;
+    color: white;
+}
+
+.percentage_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 56%;
+    background-color: #2A4E56;
+    border-radius: 10px;
+    height: 2.6vw;
+    align-items: center;
+    font-size: 1.1vw;
+    font-family: Fjalla One, sans-serif;
+}
+
+.category_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5vw;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 9%;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Inter, sans-serif;
+    font-size: 0.7vw;
+    font-weight: 800;
+    border-radius: 10px;
+    padding: 0.6vw;
+    padding-bottom: 0.8vw;
+}
+
+.category_symbol {
+    background-color: #ECECEC;
+    width: 2vw;
+    height: 1.9vw;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5vw;
+}
+
+.create_expense {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 1.2vw;
+    width: 21.6%;
+}
+
+h3 {
+    font-family: Inter, sans-serif;
+    color: #2A4E56;
+    font-size: 1.4vw;
+}
+
+.expense-input {
+    margin-top: -0.5vw;
+    background-color: white;
+    border-radius: 10px;
+    height: 2.6vw;
+    border: none;
+    padding-left: 0.8vw;
+    width: 96.5%;
+    color: grey;
+    font-size: 0.9vw;
+    font-family: Inter, sans-serif;
+    outline: none;
+}
+
+.price_category, .user_month {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 101%;
+}
+
+.cash-value-input, .category-selection, .user_selection {
+    width: 47.15%;
+    padding: 0vw 0vw 0vw 0.8vw;
+    height: 2.6vw;
+    color: grey;
+    margin-top: 0.5vw;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.9vw;
+    font-family: Inter, sans-serif;
+    outline: none;
+    appearance: none;
+}
+
+.select_date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 47.15%;
+    height: 2.6vw;
+    margin-top: 0.5vw;
+}
+
+.select_month, .select_year {
+    color: grey;
+    border-radius: 10px;
+    border: none;
+    padding: 0vw 0.8vw 0vw 0.8vw;
+    font-family: Inter, sans-serif;
+    font-size: 0.9vw;
+    appearance: none;
+    outline: none;
+}
+
+.select_year {
+    text-align: center;
+}
+
+.month-separator {
+    padding-left: 1.2vw;
+    font-family: Fjalla One, sans-serif;
+    font-size: 1.3vw;
+    color: rgb(42, 78, 86);
+    text-transform: capitalize;
+}
+
+.add_expense_button {
+    background-color: #4AE89C;
+    border-radius: 10px;
+    height: 2.6vw;
+    border: 1px solid #2A4E56;
+    color: #2A4E56;
+    font-size: 0.9vw;
+    font-weight: 600;
+    margin-top: 0.5vw;
+    box-shadow: 0 0.15vw #2A4E56;
+    width: 101%;
+}
+
+.user_selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 0.8vw;
+    width: 0%;
+    width: 28%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: color 0.15s ease-in;
+}
+
+input[type="radio"]:checked + label[class="tab"] {
+    justify-content: center;
+    color: white;
+    background-color: #2A4E56;
+    height: 2.2vw;
+    padding: 0vw 1.2vw;
+    margin-left: -0.6vw;
+    margin-right: -0.1vw;
+}
+
+.user_selection input[type="radio"] {
+    display: none;
+}
+
+.card_3, .card_2 {
+    width: 37%;
+    margin: 0.5vw;
+    background-color: white;
+    border-radius: 10px;
+    height: 97.5%;
+}
+
+.name_total_value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 1.2vw;
+    background-color: #2A4E56;
+    color: #4AE89C;
+    font-family: Fjalla One, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.total_value_per_person {
+    color: white;
+}
+
+.expenses_by_name_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.expense_data_part_1, .expense_data_part_2, .expense_data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.1vw 0.8vw;
+}
+
+.expense_data_part_1 {
+    cursor: pointer;
+}
+
+.expense_data {
+    justify-content: space-between;
+    border-bottom: 2px solid #ECECEC;
+}
+
+.icon {
+    background-color: #ECECEC;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    align-items: center;
+}
+
+.expense_name {
+    padding-left: 0.8vw;
+    font-size: 1vw;
+    text-transform: capitalize;
+}
+
+.cash_value {
+    padding-right: 1.2vw;
+    font-family: Inter, sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+.expense_data_editable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5vw;
+    width: 122.3%;
+    margin-left: -0.4vw;
+}
+
+.expense_data_edit_part_1, .expense_data_edit_part_2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.1vw 0.8vw;
+}
+
+.cash_value_input_edit {
+    font-family: Inter, sans-serif;
+    font-weight: 200;
+    width: 9.8vw;
+    text-align: right;
+    margin-right: 0.9vw;
+    font-size: 1vw;
+    border: none;
+    outline: none;
+    color: rgb(170, 170, 170);
+}
+
+.expense_name_input_edit {
+    font-family: Inter, sans-serif;
+    font-weight: 200;
+    font-size: 1vw;
+    width: 11vw;
+    border: none;
+    outline: none;
+    color: rgb(170, 170, 170);
+    text-transform: capitalize;
+}

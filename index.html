@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Split</title>
+</head>
+<body>
+    <div class="card_1">
+        <div class="user_feed">
+            <div class="user_debt_card">
+                <div class="user_display_name_settings">
+                    <div class="user_display_name">
+                        <p class="first_user">Sandro</p>
+                        <p><i class="material-symbols-outlined" style="font-size: 1vw; margin-top: 0.2vw; padding: 0vw 0.5vw">chip_extraction</i></p>
+                        <p class="second_user">Tânia</p>
+                    </div>
+                    <button class="settings_button">
+                        <a href="settings/settings.html">
+                            <i class="material-symbols-outlined" style="font-size: 1.4vw; color: #2A4E56; margin-right: -0.5vw;">settings</i>
+                        </a>
+                    </button>
+                </div>
+                <div class="user_debt">
+                    <p class="user_debt_euros js-user_debt_euros"></p>
+                    <p class="user_debt_cents js-user_debt_cents"></p>
+                </div>
+            </div>
+            <div class="expenses_date js_expenses_date">
+                <div class="choose_expense_year js_choose_expense_year">
+                    <button class="year" data-year="2024">2024</button>
+                    <button class="year" data-year="2023">2023</button>
+                    <button class="year" data-year="2022">2022</button>
+                    <button class="year" data-year="2021">2021</button>
+                    <button class="year" data-year="2020">2020</button>
+                    <div class="empty_space"></div>
+                </div>
+                <div class="choose_expense_month js_choose_expense_month">
+                    <button class="month" data-month="0">Todos</button>
+                    <button class="month" data-month="1">Janeiro</button>
+                    <button class="month" data-month="2">Fevereiro</button>
+                    <button class="month" data-month="3">Março</button>
+                    <button class="month" data-month="4">Abril</button>
+                    <button class="month" data-month="5">Maio</button>
+                    <button class="month" data-month="6">Junho</button>
+                    <button class="month" data-month="7">Julho</button>
+                    <button class="month" data-month="8">Agosto</button>
+                    <button class="month" data-month="9">Setembro</button>
+                    <button class="month" data-month="10">Outubro</button>
+                    <button class="month" data-month="11">Novembro</button>
+                    <button class="month" data-month="12">Dezembro</button>
+                    <div class="empty_space"></div>
+                </div>        
+            </div>
+            <div class="user_overview">
+                <div class="user_total_goal">
+                    <div class="users_total">
+                        <p style="padding: 0vw 0.8vw;">Total</p>
+                        <p class="js-total-both-users" style="padding: 0vw 0.8vw;">353€</p>
+                    </div>
+                    <div class="users_goal">
+                        <p style="padding: 0vw 0.8vw;">Goal</p>
+                        <p style="padding: 0vw 0.8vw;">200€</p>
+                    </div>
+                </div>
+                <div class="mensal_goal_percentage">
+                    <div class="percentage_bar">
+                        <p class="js-mensal-goal-text">Goal Mensal</p>
+                        <p class="js-percentage-bar-value">58%</p>
+                    </div>
+                </div>
+                <div class="category_buttons">
+                    <div class="category">
+                        <button class="category_symbol">
+                            <i class="material-symbols-outlined" style="font-size: 1vw;">shopping_basket</i>
+                        </button>
+                        50%
+                    </div>
+                    <div class="category">
+                        <button class="category_symbol">
+                            <i class="material-symbols-outlined" style="font-size: 1vw;">home</i>
+                        </button>
+                        34%
+                    </div>
+                    <div class="category">
+                        <button class="category_symbol">
+                            <i class="material-symbols-outlined" style="font-size: 1vw;">explore</i>
+                        </button>
+                        13%
+                    </div>
+                    <div class="category">
+                        <button class="category_symbol">
+                            <i class="material-symbols-outlined" style="font-size: 1vw;">local_pizza</i>
+                        </button>
+                        10%
+                    </div>
+                    <div class="category">
+                        <button class="category_symbol">
+                            <i class="material-symbols-outlined" style="font-size: 1vw;">confirmation_number</i>
+                        </button>
+                        2%
+                    </div>
+                    <div class="category">
+                        <button class="category_symbol">
+                            <i class="material-symbols-outlined" style="font-size: 1vw;">mode_fan</i>
+                        </button>
+                        0%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="create_expense">
+            <h3>Nova despesa</h3>
+            <input placeholder="Despesa" class="expense-input" id="expense">
+            <div class="price_category">
+                <input placeholder="304,00" class="cash-value-input" id="cashValue">
+                <select class="category-selection" id="category">
+                    <option value="Mercearia">Mercearia</option>
+                    <option value="Casa">Casa</option>
+                    <option value="Viagem">Viagem</option>
+                    <option value="Restaurantes">Restaurantes</option>
+                    <option value="Bilhetes">Bilhetes</option>
+                    <option value="Outros">Outros</option>
+                </select>
+            </div>
+            <div class="user_month">
+                <form class="user_selection" id="form">
+                    <input type="radio" id="user1" name="nome" value="user1" checked>
+                    <label class="tab" for="user1">Sandro</label><br>
+                    <input type="radio" id="user2" name="nome" value="user2">
+                    <label class="tab" for="user2">Tânia</label><br>
+                </form>
+                <div class="select_date">
+                    <select class="select_month" id="dueDateMonth">
+                        <option value="janeiro">Janeiro</option>
+                        <option value="fevereiro">Fevereiro</option>
+                        <option value="março">Março</option>
+                        <option value="abril">Abril</option>
+                        <option value="maio">Maio</option>
+                        <option value="junho">Junho</option>
+                        <option value="julho">Julho</option>
+                        <option value="agosto">Agosto</option>
+                        <option value="setembro">Setembro</option>
+                        <option value="outubro">Outubro</option>
+                        <option value="novembro">Novembro</option>
+                        <option value="dezembro">Dezembro</option>
+                    </select>
+                    <select class="select_year" id="dueDateYear">
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>    
+                </div>
+            </div>
+            <button class="add_expense_button" href="script.js" onclick="saveExpense('user', 'expense', 'cashValue', 'category', 'dueDateMonth', 'dueDateYear')">
+                Adicionar despesa
+            </button>
+        </div>
+    </div>
+    
+    <div class="card_2 js-user1-card">
+        <div class="name_total_value">
+            <p>Sandro</p>
+            <p class="total_value_per_person js_total_user1"></p>
+        </div>
+    </div>
+    
+    <div class="card_3 js-user2-card">
+        <div class="name_total_value">
+            <p>Tânia</p>
+            <p class="total_value_per_person js_total_user2"></p>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
