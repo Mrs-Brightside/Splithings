@@ -1,6 +1,6 @@
 import { monthSlider, isDownMonth, monthStartX, monthScrollLeft, monthButtons, monthSelectedButton } from './month_horizontal_slider.js';
 import { slider, isDown, startX, scrollLeft, yearButtons, selectedButton } from './year_horizontal_slider.js';
-const APILINK = 'http://localhost:5000/api/v1/split/';
+const APILINK = 'https://splithings.onrender.com/api/v1/split/';
 
 let user = 'user1';
 
