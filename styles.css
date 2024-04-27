@@ -330,6 +330,11 @@ input[type="radio"]:checked + label[class="tab"] {
     background-color: white;
     border-radius: 10px;
     height: 97.5%;
+    overflow-y: scroll;
+}
+
+.card_3::-webkit-scrollbar, .card_2::-webkit-scrollbar {
+    display: none;
 }
 
 .name_total_value {
@@ -344,6 +349,8 @@ input[type="radio"]:checked + label[class="tab"] {
     font-size: 1.5vw;
     font-weight: 500;
     border-radius: 10px 10px 0px 0px;
+    position: fixed;
+    width: 34.2%;
 }
 
 .total_value_per_person {
@@ -353,6 +360,10 @@ input[type="radio"]:checked + label[class="tab"] {
 .expenses_by_name_card {
     display: flex;
     flex-direction: column;
+}
+
+.separator {
+    padding: 2.5vw;
 }
 
 .expense_data_part_1, .expense_data_part_2, .expense_data {
